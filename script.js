@@ -20,9 +20,9 @@ document.getElementById("priceCalculator").addEventListener("submit", function (
         totalCost += commissionCLASICA;
         breakdownHTML += `<li>Comisión por venta CLASICA (14%): $${commissionCLASICA.toFixed(2)}</li>`;
     } else if (listingType === "CUOTAS") {
-        const commissionCUOTAS = (26 / 100) * productPrice; // Cambio del 24% al 26%
+        const commissionCUOTAS = (40 / 100) * productPrice; // Cambio del 24% al 26%
         totalCost += commissionCUOTAS;
-        breakdownHTML += `<li>Comisión por venta en CUOTAS SIN INTERES (26%): $${commissionCUOTAS.toFixed(2)}</li>`;
+        breakdownHTML += `<li>Comisión por venta en CUOTAS SIN INTERES (40%): $${commissionCUOTAS.toFixed(2)}</li>`;
     }
 
     const sirtac = 0.002 * productPrice;
