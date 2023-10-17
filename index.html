@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Precio en MercadoLibre</h1>
+        <form id="priceCalculator">
+            <label for="productPrice">Precio del Producto:</label>
+            <input type="number" id="productPrice" required>
+            
+            <label for="listingType">Tipo de Publicación:</label>
+            <select id="listingType">
+                <option value="CLASICA">CLASICA</option>
+                <option value="CUOTAS">CUOTAS SIN INTERES</option>
+            </select>
+
+            <button type="submit">Calcular Precio en MercadoLibre</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
